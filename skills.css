@@ -1,0 +1,377 @@
+/* Skills Page - Clean Light Design */
+#skills-main {
+    background: #f1f1f1;
+    color: #000000;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+#nav {
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a {
+    color: #000000;
+}
+
+.nav-links a:hover {
+    color: #7c7c7c;
+}
+
+#nav .active {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.skills-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #b3cde2 0%, #a0c1d6 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.hero-title span {
+    color: #000000;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #504e4e;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* Skills Sections */
+.skills-section {
+    padding: 120px 5%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.section-title span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section-desc {
+    font-size: 1.3rem;
+    color: #7c7c7c;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Programming Languages */
+.programming-section {
+    background-color: #d5dce0;
+    border-radius: 0;
+    margin: 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #000000;
+}
+
+.skill-icon {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.skill-name {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.skill-desc {
+    color: #7c7c7c;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Web Technologies */
+.web-section {
+    background-color: #f1f1f1;
+}
+
+.web-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.web-skill {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.web-skill:hover {
+    transform: translateY(-5px);
+    border-color: #000000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.web-icon {
+    font-size: 3rem;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.web-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.web-content p {
+    color: #7c7c7c;
+    line-height: 1.6;
+}
+
+/* Database & Others */
+.database-section {
+    background-color: #adcee8;
+    border-radius: 0;
+    margin: 0;
+}
+
+.db-others-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.database-skills, .other-skills {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.sub-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+}
+
+.db-skill {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.db-skill:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.db-icon {
+    font-size: 2.5rem;
+    color: #000000;
+    min-width: 60px;
+}
+
+.db-content h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.db-content p {
+    color: #7c7c7c;
+    line-height: 1.6;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.other-skill {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.other-skill:hover {
+    transform: scale(1.05);
+    border-color: #000000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.other-icon {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.other-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.other-content p {
+    color: #7c7c7c;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .db-others-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .skills-container,
+    .web-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-section {
+        padding: 80px 5%;
+    }
+    
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .skill-card,
+    .web-skill,
+    .database-skills,
+    .other-skills {
+        padding: 25px 20px;
+    }
+    
+    .web-skill {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .web-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .db-skill {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .other-skill {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}

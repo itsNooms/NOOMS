@@ -145,7 +145,7 @@ canvas{
     font-weight: 400;
     color: #504e4e;
     left: 3%;
-    font-size: 24px;
+    font-size: 22px;
 }
 #page>h4{
     position: absolute;
@@ -157,7 +157,7 @@ canvas{
 #page1>#right-text{
     position: absolute;
     top: 30%;
-    left: 1%;
+    left: 3%;
 }
 #page1>#right-text>h3{
     font-weight: 400;
@@ -165,17 +165,17 @@ canvas{
 }
 #page1>#right-text>h1{
     line-height: 1.5;
-    font-size: 50px;
+    font-size: 40px;
     color: #00000097;
 }
 #page1>#left-text{
     position: absolute;
     top: 40%;
-    right: 3%;
+    right: 5%;
     text-align: end;
 }
 #page1>#left-text>h1{
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.5;
     color: #00000097;
 }
@@ -214,7 +214,7 @@ canvas{
     font-weight: 400;
 }
 #page3>#text3>h1{
-    font-size: 70px;
+    font-size: 60px;
     color: #152a59;
 }
 
@@ -243,8 +243,8 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
@@ -404,5 +404,4 @@ canvas{
 .nav-links a.active {
     color: #4a6fa5;
     border-bottom: 2px solid #4a6fa5;
-
 }

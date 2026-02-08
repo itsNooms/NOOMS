@@ -317,7 +317,7 @@ canvas{
 #page3>#text3 {
     position: absolute;
     top: 40%;
-    right: 10%;
+    right: 5%;
     text-align: end;
 }
 
@@ -405,3 +405,4 @@ canvas{
     color: #4a6fa5;
     border-bottom: 2px solid #4a6fa5;
 }
+

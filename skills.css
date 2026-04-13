@@ -1,37 +1,20 @@
-/* Skills Page - Clean Light Design */
 #skills-main {
     background: #f1f1f1;
-    color: #000000;
+    color: #152a59;
     min-height: 100vh;
     overflow-x: hidden;
+    font-family: gilroy;
 }
 
-/* Navigation */
-#nav {
-    background: transparent;
-    backdrop-filter: blur(10px);
-}
 
-.nav-links a {
-    color: #000000;
-}
-
-.nav-links a:hover {
-    color: #7c7c7c;
-}
-
-#nav .active {
-    color: #000000;
-    font-weight: 600;
-}
 
 /* Hero Section */
 .skills-hero {
-    height: 100vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("skills.jpg");
+    background-image: url("hero-bg.png"); /* Using the same botanical theme */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -41,49 +24,51 @@
 .hero-content {
     text-align: center;
     z-index: 2;
-    max-width: 800px;
-    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    padding: 30px 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: calc(4rem + 2px);
     font-weight: 400;
-    margin-bottom: 20px;
-    color: #000000;
+    margin-bottom: 10px;
+    color: #152a59;
 }
 
 .hero-title span {
-    color: #000000;
+    color: #152a59;
     font-style: italic;
     font-weight: 600;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    color: #8a8787;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
+    font-size: calc(1.2rem + 2px);
+    color: #152a59;
+    opacity: 0.8;
+    letter-spacing: 2px;
 }
 
 /* Skills Sections */
 .skills-section {
-    padding: 120px 5%;
+    padding: 80px 5%;
     position: relative;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .section-title {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: #000000;
+    font-size: calc(2.5rem + 2px);
+    margin-bottom: 15px;
+    color: #152a59;
     font-weight: 400;
 }
 
@@ -93,8 +78,8 @@
 }
 
 .section-desc {
-    font-size: 1.3rem;
-    color: #7c7c7c;
+    font-size: calc(1.1rem + 2px);
+    color: #555;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -108,44 +93,45 @@
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .skill-card {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 15px;
-    padding: 40px 30px;
+    padding: 30px 20px;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-color: #000000;
+    transform: translateY(-5px);
+    border-color: #152a59;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .skill-icon {
-    font-size: 3.5rem;
-    margin-bottom: 25px;
-    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #152a59;
 }
 
 .skill-name {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #000000;
-    font-weight: 500;
+    font-size: calc(1.4rem + 2px);
+    margin-bottom: 12px;
+    color: #152a59;
+    font-weight: 600;
 }
 
 .skill-desc {
-    color: #7c7c7c;
-    font-size: 1rem;
-    line-height: 1.6;
+    color: #555;
+    font-size: calc(0.9rem + 2px);
+    line-height: 1.5;
 }
 
 /* Web Technologies */
@@ -155,49 +141,51 @@
 
 .web-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .web-skill {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     transition: all 0.3s ease;
 }
 
 .web-skill:hover {
     transform: translateY(-5px);
-    border-color: #000000;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #152a59;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .web-icon {
-    font-size: 3rem;
-    width: 70px;
-    height: 70px;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #152a59;
 }
 
 .web-content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #000000;
-    font-weight: 500;
+    font-size: calc(1.1rem + 2px);
+    margin-bottom: 5px;
+    color: #152a59;
+    font-weight: 600;
 }
 
 .web-content p {
-    color: #7c7c7c;
-    line-height: 1.6;
+    color: #555;
+    font-size: calc(0.85rem + 2px);
+    line-height: 1.4;
 }
 
 /* Database & Others */
@@ -216,26 +204,27 @@
 }
 
 .database-skills, .other-skills {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 15px;
-    padding: 40px;
+    padding: 30px;
 }
 
 .sub-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #000000;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #152a59;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .db-skill {
     display: flex;
-    gap: 25px;
-    margin-bottom: 35px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .db-skill:last-child {
@@ -245,21 +234,22 @@
 }
 
 .db-icon {
-    font-size: 2.5rem;
-    color: #000000;
-    min-width: 60px;
+    font-size: 1.8rem;
+    color: #152a59;
+    min-width: 45px;
 }
 
 .db-content h4 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #000000;
-    font-weight: 500;
+    font-size: calc(1.2rem + 2px);
+    margin-bottom: 5px;
+    color: #152a59;
+    font-weight: 600;
 }
 
 .db-content p {
-    color: #7c7c7c;
-    line-height: 1.6;
+    color: #555;
+    font-size: calc(0.9rem + 2px);
+    line-height: 1.4;
 }
 
 .skills-list {
@@ -291,10 +281,10 @@
 }
 
 .other-content h4 {
-    font-size: 1.4rem;
-    margin-bottom: 5px;
-    color: #000000;
-    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+    color: #152a59;
+    font-weight: 600;
 }
 
 .other-content p {

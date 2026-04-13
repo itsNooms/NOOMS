@@ -7,6 +7,7 @@
     <title>NOOMS Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="logo.png">
 </head>
@@ -312,6 +313,14 @@
                     this.style.transform = 'translateY(0)';
                 });
             });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script>
+        // Initialize Locomotive Scroll for smooth custom scrollbar
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector("#projects-main"),
+            smooth: true,
         });
     </script>
     <script src="water-effect.js"></script>

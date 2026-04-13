@@ -197,9 +197,10 @@
 
 .db-others-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 60px;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -209,6 +210,7 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     padding: 30px;
+    width: 100%;
 }
 
 .sub-title {
@@ -219,18 +221,27 @@
     font-weight: 600;
 }
 
+.db-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
 .db-skill {
     display: flex;
     gap: 15px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
-.db-skill:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
+.db-skill:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.8);
+    border-color: #152a59;
 }
 
 .db-icon {
@@ -254,8 +265,9 @@
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: 100%;
 }
 
 .other-skill {
@@ -304,8 +316,11 @@
     }
     
     .db-others-container {
-        grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -320,6 +335,11 @@
     
     .skills-container,
     .web-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-list,
+    .db-list {
         grid-template-columns: 1fr;
     }
     

@@ -56,12 +56,12 @@ canvas {
 
 #fixed-image {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 65%;
+    left: 52%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    width: 700px;
-    height: 900px;
+    width: 500px;
+    height: 700px;
     max-height: 95vh;
     pointer-events: none;
 }

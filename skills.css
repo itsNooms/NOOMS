@@ -6,6 +6,30 @@
     font-family: gilroy;
 }
 
+/* ---- Custom Scrollbar ---- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e8ecf0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #152a59;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a6fa5;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #152a59 #e8ecf0;
+}
+
+
 
 
 /* Hero Section */
@@ -26,9 +50,11 @@
     z-index: 2;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(8px);
-    padding: 30px 60px;
+    padding: 24px 36px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 700px;
 }
 
 .hero-title {
@@ -326,11 +352,16 @@
 
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-content {
+        padding: 20px 24px;
+        width: 92%;
     }
     
     .skills-container,
@@ -344,46 +375,97 @@
     }
     
     .skills-section {
-        padding: 80px 5%;
+        padding: 50px 5% 40px;
     }
-    
-    .skills-list {
-        grid-template-columns: 1fr;
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .database-skills, .other-skills {
+        padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content {
+        padding: 16px 18px;
+        width: 94%;
+    }
+
+    .skills-section {
+        padding: 40px 4% 30px;
     }
     
     .skill-card,
     .web-skill,
     .database-skills,
     .other-skills {
-        padding: 25px 20px;
+        padding: 20px 16px;
     }
     
     .web-skill {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 12px;
     }
     
     .web-icon {
-        width: 60px;
-        height: 60px;
+        width: 56px;
+        height: 56px;
+        font-size: 1.8rem;
     }
     
     .db-skill {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 12px;
+        padding: 16px;
     }
     
     .other-skill {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 12px;
+        padding: 18px 14px;
+    }
+
+    .skill-name {
+        font-size: 1.2rem;
+    }
+
+    .sub-title {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    .section-desc {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .skills-section {
+        padding: 36px 3% 24px;
+    }
+
+    .skill-card {
+        padding: 16px 12px;
     }
 }

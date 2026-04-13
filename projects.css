@@ -6,6 +6,30 @@
     font-family: gilroy;
 }
 
+/* ---- Custom Scrollbar ---- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e8ecf0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #152a59;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a6fa5;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #152a59 #e8ecf0;
+}
+
+
 /* Hero Section */
 .projects-hero {
     height: 40vh;
@@ -24,9 +48,11 @@
     z-index: 2;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(8px);
-    padding: 30px 60px;
+    padding: 24px 36px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 700px;
 }
 
 .hero-title {
@@ -222,38 +248,45 @@
 }
 
 @media (max-width: 768px) {
+    .hero-content {
+        padding: 20px 24px;
+        width: 92%;
+    }
+
     .projects-container {
         grid-template-columns: 1fr;
-        max-width: 500px;
+        max-width: 540px;
+        width: 95%;
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .projects-section {
-        padding: 40px 5%;
+        padding: 50px 4%;
         min-height: auto;
+        display: block;
     }
 
     .project-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+        flex-direction: row;
+        text-align: left;
+        gap: 12px;
     }
 
     .project-title {
-        text-align: center;
+        text-align: left;
     }
 
     .project-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 2.5rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
     }
 
     .project-card {
@@ -266,37 +299,73 @@
 }
 
 @media (max-width: 480px) {
+    .hero-content {
+        padding: 16px 18px;
+        width: 94%;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #nav {
-        padding: 10px 15px;
+        padding: 8px 4%;
     }
 
     .nav-links {
-        gap: 15px;
-        margin-right: 10px;
+        gap: 14px;
+        margin-right: 8px;
     }
 
     .nav-links a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    #nav>button {
-        font-size: 16px;
-        padding: 7px 12px;
+    #nav > button {
+        display: none;
+    }
+
+    .projects-section {
+        padding: 36px 4%;
+    }
+
+    .projects-container {
+        max-width: 100%;
+        gap: 16px;
     }
 
     .project-card {
-        padding: 20px 15px;
+        padding: 18px 14px;
     }
 
     .project-title {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .project-desc {
+        font-size: 0.95rem;
+    }
+
+    .tech-tag {
+        font-size: 13px;
+        padding: 2px 8px;
+    }
+
+    .feature span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .project-card {
+        padding: 14px 10px;
+    }
+
+    .project-title {
         font-size: 1rem;
     }
 }
